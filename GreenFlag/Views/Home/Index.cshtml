@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Ashley.cshtml";
+}
+
+@section scripts{
+
+    <script src="~/Scripts/app/custom.js"></script>
+}
+
+
+
+<!-- header -->
+<!-- content -->
+<section id="home" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-6">
+                <div class="flexslider" id="flexHome">
+                    <ul class="slides">
+                        <li>
+                            <h1>Hello, this is Ashley</h1>
+                            <h2>Bootstrap 3 One page template</h2>
+                        </li>
+                        <li>
+                            <h1>Modern and Creative</h1>
+                            <h2>Beautiful and clean design</h2>
+                        </li>
+                        <li>
+                            <h1>Mobile first design</h1>
+                            <h2>Fully responsive</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-6 hidden-xs">
+                <img src="/Theme/OnePage/images/theme-pics/home-girl.png" alt="Ashley, Bootstrap website template" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+<section class="color4 slice">
+    <div class="ctaBox ctaBoxFullwidth">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>
+                        <strong>Ashley Bootstrap Website Template</strong> is perfect for simple and clean presentation of your business.
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg" title="" href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207" target="blank">
+                        <i class="icon-flash"></i> purchase now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+<!-- news -->
+@Html.Partial("_News")
+<!-- news -->
+<!-- services -->
+@Html.Partial("_Services")
+<!-- services -->
+
+
+<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+    <div class="maskParent">
+        <div class="paralaxMask"></div>
+        <div class="paralaxText container">
+            <i class="icon-megaphone "></i>
+            <blockquote class="bigTitle">Being a famous designer<br />is like being a famous dentist<br /><small>NOREEN MORIOKA</small></blockquote>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_About")
+@Html.Partial("_Pricing")
+
+<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
+    <div class="maskParent">
+        <div class="paralaxMask"></div>
+        <div class="paralaxText container">
+            <i class="icon-mobile iconBig"></i><i class="icon-tablet iconBig"></i><i class="icon-laptop iconBig"></i><i class="icon-desktop iconBig"></i>
+            <blockquote class="bigTitle">Mobile first, truly responsive,<br /> based on bootstrap 3</blockquote>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_Works")
+
+<div id="paralaxSlice3" data-stellar-background-ratio="0.5">
+    <div class="maskParent">
+        <div class="paralaxMask"></div>
+        <div class="paralaxText">
+            <i class="icon-star iconBig"></i>
+            <blockquote class="mt15">Write drunk; edit sober.<br /><small>ERNEST HEMINGWAY </small></blockquote>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_Team")
+<div id="paralaxSlice4" data-stellar-background-ratio="0.5">
+    <div class="maskParent">
+        <div class="paralaxMask"></div>
+
+        <div class="paralaxText">
+            <blockquote>Keep in touch with us</blockquote>
+
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_Contact")
+<!-- content -->
