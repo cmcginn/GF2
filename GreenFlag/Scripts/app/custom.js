@@ -94,7 +94,7 @@ window.onload = function () { "use strict"; gaSSDSLoad(""); }; //load after page
 |--------------------------------------------------------------------------
 | DOCUMENT READY
 |--------------------------------------------------------------------------
-*/  
+*/
 
 $(document).ready(function() {
     "use strict";
@@ -106,36 +106,33 @@ $(document).ready(function() {
     */
 
 
-    if ($('#homeFullScreen').length)
-    {
+    if ($('#homeFullScreen').length) {
         fullscreenImage();
     }
     //alert($('#mainHeader').height());
     //alert( $(window).height());
-    var $starter = $(window).height()-($('#mainHeader').height());
+    var $starter = $(window).height() - ($('#mainHeader').height());
     $(window).scroll(function() {
 
-     if ($('#fullScreen').length)
-     {
-
-    
-        if ($(window).scrollTop()>= $starter){
-           $('#mainHeader').slideDown();
-       } else if ($(window).scrollTop()==0){
-           $('#mainHeader').slideUp();
-       }
-   }
-
-     });
+        if ($('#fullScreen').length) {
 
 
+            if ($(window).scrollTop() >= $starter) {
+                $('#mainHeader').slideDown();
+            } else if ($(window).scrollTop() == 0) {
+                $('#mainHeader').slideUp();
+            }
+        }
 
-	 /*
+    });
+
+
+/*
     |--------------------------------------------------------------------------
     |  form placeholder for IE
     |--------------------------------------------------------------------------
     */
-    if(!Modernizr.input.placeholder){
+    if (!Modernizr.input.placeholder) {
 
         $('[placeholder]').focus(function() {
             var input = $(this);
@@ -159,14 +156,25 @@ $(document).ready(function() {
             })
         });
 
-    }			
+    }
     /*
     |--------------------------------------------------------------------------
     | MAGNIFIC POPUP
     |--------------------------------------------------------------------------
     */
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    //if ($("a.info-link").length) {
+    //    $("a.info-link").click(function(e) {
+    //        var targetHtml = $(this).data('target-id');
+    //        if ($(targetHtml).length==1) {
+    //            var target = $('<div>').html($(targetHtml).html());
 
-
+    //        }
+    //    });
+    //}
 
     if( $("a.image-link").length){
 

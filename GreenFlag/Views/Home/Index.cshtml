@@ -3,7 +3,30 @@
     Layout = "~/Views/Shared/_Ashley.cshtml";
 }
 
+<style>
+    .info-popup {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: auto;
+        max-width: 500px;
+        margin: 20px auto;
+        border-radius: 4px;
+    }
 
+    .popup-header {
+        margin-top: 5px;
+    }
+
+        .popup-header img {
+            width: 75px;
+            height: 75px;
+        }
+        .popup-content {
+            padding: 0 25px 0 25px;
+            text-align: justify;
+        }
+</style>
 <!-- header -->
 <!-- content -->
 <section id="home" data-stellar-background-ratio="0.5">
@@ -53,7 +76,6 @@
     </div>
 </section>
 <!-- call to action -->
-
 @Html.Partial("_Expertise")
 
 
@@ -72,41 +94,51 @@
 </div>
 
 @Html.Partial("_About")
-@Html.Partial("_Pricing")
-
-<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
-    <div class="maskParent">
-        <div class="paralaxMask"></div>
-        <div class="paralaxText container">
-            <i class="icon-mobile iconBig"></i><i class="icon-tablet iconBig"></i><i class="icon-laptop iconBig"></i><i class="icon-desktop iconBig"></i>
-            <blockquote class="bigTitle">Mobile first, truly responsive,<br /> based on bootstrap 3</blockquote>
-        </div>
-    </div>
-</div>
-
-@Html.Partial("_Works")
 
 <div id="paralaxSlice3" data-stellar-background-ratio="0.5">
     <div class="maskParent">
         <div class="paralaxMask"></div>
         <div class="paralaxText">
             <i class="icon-star iconBig"></i>
-            <blockquote class="mt15">Write drunk; edit sober.<br /><small>ERNEST HEMINGWAY </small></blockquote>
+            <blockquote class="mt15">Keep in touch with us.<br /></blockquote>
         </div>
     </div>
 </div>
 
-@Html.Partial("_Team")
-<div id="paralaxSlice4" data-stellar-background-ratio="0.5">
-    <div class="maskParent">
-        <div class="paralaxMask"></div>
-
-        <div class="paralaxText">
-            <blockquote>Keep in touch with us</blockquote>
-
+@*<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
+        <div class="maskParent">
+            <div class="paralaxMask"></div>
+            <div class="paralaxText container">
+                <i class="icon-mobile iconBig"></i><i class="icon-tablet iconBig"></i><i class="icon-laptop iconBig"></i><i class="icon-desktop iconBig"></i>
+                <blockquote class="bigTitle">Mobile first, truly responsive,<br /> based on bootstrap 3</blockquote>
+            </div>
         </div>
-    </div>
-</div>
+    </div>*@
+
+@*@Html.Partial("_Works")
+
+    <div id="paralaxSlice3" data-stellar-background-ratio="0.5">
+        <div class="maskParent">
+            <div class="paralaxMask"></div>
+            <div class="paralaxText">
+                <i class="icon-star iconBig"></i>
+                <blockquote class="mt15">Write drunk; edit sober.<br /><small>ERNEST HEMINGWAY </small></blockquote>
+            </div>
+        </div>
+    </div>*@
+
+
+@*<div id="paralaxSlice4" data-stellar-background-ratio="0.5">
+        <div class="maskParent">
+            <div class="paralaxMask"></div>
+
+            <div class="paralaxText">
+                <blockquote>Keep in touch with us</blockquote>
+
+            </div>
+        </div>
+    </div>*@
 
 @Html.Partial("_Contact")
 <!-- content -->
+
