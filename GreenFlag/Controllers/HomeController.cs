@@ -14,5 +14,11 @@ namespace GreenFlag.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public JsonResult Contact()
+        {
+            var frm = Request.Form;
+            return Json(new {success=true});
+        }
 	}
 }

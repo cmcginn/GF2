@@ -997,9 +997,9 @@ jQuery(function() {
                 email: true
             },
             phone: {
-                required: true,
-                minlength: 10,
-                digits:true
+                required: false,
+                minlength: 10
+               
             },
             comment: {
                 required: true,

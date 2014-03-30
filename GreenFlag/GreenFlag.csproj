@@ -177,7 +177,6 @@
     <Content Include="packages.config" />
     <Content Include="Theme\OnePage\js-plugin\parallax\js\jquery.localscroll-1.2.7.js" />
     <Content Include="Theme\OnePage\js-plugin\parallax\js\jquery.scrollTo-1.4.3.1.js" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />

@@ -982,8 +982,14 @@ jQuery(function() {
             error.insertBefore( element );
         },
         submitHandler: function(form) {
-            jQuery(form).ajaxSubmit({
-              target: ".result"
+            jQuery(form).ajaxSubmit({        
+                success: function (e) {
+                    if(e.success)
+                    {
+                        $('#contactfrm').hide();
+                        $('#contactResult').fadeIn(1000);
+                    }
+                }
           });
         },
         onkeyup: false,
@@ -1005,9 +1011,9 @@ jQuery(function() {
                 email: true
             },
             phone: {
-                required: true,
-                minlength: 10,
-                digits:true
+                required: false,
+                minlength: 10
+     
             },
             comment: {
                 required: true,
