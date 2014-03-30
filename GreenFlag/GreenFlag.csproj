@@ -126,7 +126,9 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\._custom.js" />
     <Content Include="Scripts\app\custom.js" />
+    <Content Include="Scripts\app\site.js" />
     <Content Include="Scripts\Vendor\modernizr-2.6.1.min.js" />
+    <Content Include="Theme\OnePage\css\site.css" />
     <Content Include="Theme\OnePage\font-icons\custom-icons\config.json" />
     <Content Include="Theme\OnePage\font-icons\custom-icons\font\custom-icons.eot" />
     <Content Include="Theme\OnePage\font-icons\custom-icons\font\custom-icons.ttf" />
@@ -137,6 +139,30 @@
     <Content Include="Theme\OnePage\images\news\mobileApplications_small.png" />
     <Content Include="Theme\OnePage\images\news\webApplications.png" />
     <Content Include="Theme\OnePage\images\news\webApplications_small.png" />
+    <Content Include="Theme\OnePage\images\rotator\bigdata2.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\fullstack.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\LOB.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\LOB2.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\proc.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\RaceCar.jpg" />
+    <Content Include="Theme\OnePage\images\rotator\windows8.jpg" />
+    <Content Include="Theme\OnePage\images\theme-pics\contact.jpg" />
+    <Content Include="Theme\OnePage\images\theme-pics\raceCar.jpg" />
+    <Content Include="Theme\OnePage\images\works\android.jpg" />
+    <Content Include="Theme\OnePage\images\works\aws.jpg" />
+    <Content Include="Theme\OnePage\images\works\Azure.jpg" />
+    <Content Include="Theme\OnePage\images\works\googletv.jpg" />
+    <Content Include="Theme\OnePage\images\works\htmlcssjs.jpg" />
+    <Content Include="Theme\OnePage\images\works\lightswitch.jpg" />
+    <Content Include="Theme\OnePage\images\works\MicrosoftDotNet.jpg" />
+    <Content Include="Theme\OnePage\images\works\mongodb.jpg" />
+    <Content Include="Theme\OnePage\images\works\mysql.jpg" />
+    <Content Include="Theme\OnePage\images\works\oracle.jpg" />
+    <Content Include="Theme\OnePage\images\works\SharePoint.jpg" />
+    <Content Include="Theme\OnePage\images\works\sqlite.jpg" />
+    <Content Include="Theme\OnePage\images\works\SqlServer.jpg" />
+    <Content Include="Theme\OnePage\images\works\Windows8.jpg" />
+    <Content Include="Theme\OnePage\images\works\windowsphone.jpg" />
     <Content Include="Theme\OnePage\js-plugin\jquery.sharrre-1.3.4\README.md" />
     <Content Include="Theme\OnePage\js-plugin\jquery.sharrre-1.3.4\sharrre.php" />
     <Content Include="Theme\OnePage\js-plugin\jquery\1.8.3\jquery.js" />
@@ -168,6 +194,7 @@
     <Content Include="Views\Home\_Works.cshtml" />
     <Content Include="Views\Home\_Team.cshtml" />
     <Content Include="Views\Home\_Contact.cshtml" />
+    <Content Include="Views\Home\_Banner.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -448,10 +475,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="GFResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GFResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GFResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GFResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

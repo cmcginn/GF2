@@ -13,7 +13,7 @@
     @Styles.Render("~/styles/bootstrap")
     @Styles.Render("~/styles/theme")
     <link href="~/Theme/OnePage/css/green.css" rel="stylesheet" />
-
+    <link href="~/Theme/OnePage/css/site.css" rel="stylesheet" />
 </head>
 
 <body data-spy="scroll" data-target="#scrollTarget" data-offset="150" class="activateAppearAnimation">
@@ -27,16 +27,18 @@
                 <nav class="navbar navbar-default scrollMenu" role="navigation">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="navbar-brand" href="index.html"><img src="/Theme/OnePage/images/main-logo.png" alt="Ashley website template" /></a>
+                        <a class="navbar-brand" href="index.html"><img src="/Theme/OnePage/images/gf/GFLogo.png" alt="Ashley website template" /></a>
                     </div>
                     <div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
                         <ul class="nav navbar-nav pull-right">
                             <li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
                             <li><a href="#expertise"><i class="icon-certificate"></i>Expertise</a> </li>
                             <li><a href="#services"><i class="icon-thumbs-up"></i>Services</a> </li>
-                            <li><a href="#about"><i class="icon-star"></i>About</a> </li>
                             
+                            <li><a href="#about"><i class="icon-star"></i>About</a> </li>
+
                             <li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+                            <li><a href="#works"><i class="icon-thumbs-up"></i>Technologies</a> </li>
                         </ul>
                     </div>
 
@@ -52,21 +54,19 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footerWidget" data-nekoanim="fadeIn" data-nekodelay="100">
-                                <img src="/Theme/OnePage/images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
-                                <p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+                                <img src="/Theme/OnePage/images/gf/gflogoflag.png" alt="" id="footerLogo">
+                                <p><a href="http://www.greenflagsoftware.com" title="Green Flag Software">Green Flag Software</a> is a full service software development firm. We build applications for a variety of industries, delivering innovative solutions on desktop, server, devices and web platforms. We utilize industry proven technologies and frameworks to deliver nothing short of the best.</p>
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="footerWidget" data-nekoanim="fadeIn" data-nekodelay="300">
 
-                                <h3>Little NEKO</h3>
+                                <h3>Green Flag</h3>
                                 <address>
-                                    <p>
-                                        <i class="icon-location"></i>&nbsp;77 Mass. Ave., E14/E15<br>
-                                        Cambridge, MA 02139-4307 USA <br>
-                                        <i class="icon-phone"></i>&nbsp;615.987.1234 <br>
-                                        <i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a>
+                                    <p>                                      
+                                        <i class="icon-phone"></i>&nbsp;@GFResources.PhoneNumber <br>
+                                        <i class="icon-mail-alt"></i>&nbsp;<a href="mailto:@GFResources.InquiriesEmail">@GFResources.InquiriesEmail</a>
                                     </p>
                                 </address>
                             </div>
@@ -79,16 +79,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p>Copyright © 2012 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
+                        <p>Copyright © 2014&nbsp;<a href="http://www.greenflagsoftware.com" target="blank">Green Flag Software</a> / All rights reserved.</p>
                     </div>
                     <div class="col-sm-6">
-                        <ul class="socialNetwork pull-right">
+                        @*<ul class="socialNetwork pull-right">
                             <li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
                             <li><a href="https://twitter.com/LIttleNeko1" class="tips" title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
                             <li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
                             <li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
                             <li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
-                        </ul>
+                        </ul>*@
                     </div>
                 </div>
             </div>
@@ -98,6 +98,7 @@
 
     @Scripts.Render("~/bundles/plugin")
     <script src="~/Scripts/app/custom.js"></script>
+    <script src="~/Scripts/app/site.js"></script>
     @RenderSection("scripts", required: false)
 
 </body>

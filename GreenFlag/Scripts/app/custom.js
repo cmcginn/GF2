@@ -44,7 +44,7 @@ $(document).ready(function() {
     '</ul>' +*/
     '</div>'; 
 
-    $("body").append($colorsHTML);  
+   // $("body").append($colorsHTML);  
 
     var s = document.createElement("script");
     s.type = "text/javascript";

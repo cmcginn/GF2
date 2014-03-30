@@ -1,0 +1,85 @@
+﻿#expertise .imgWrapper{background:#3c3b3b;}
+#paralaxSlice1 {
+    background-image: url('/Theme/OnePage/images/theme-pics/RaceCar.jpg');
+}
+
+#mainHeader {
+    background-color: #222222;
+    border-color: #000000;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-brand {
+    padding: 10px 0 10px 0;
+}
+
+.info-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.popup-header {
+    margin-top: 5px;
+}
+
+    .popup-header img {
+        width: 75px;
+        height: 75px;
+    }
+
+.popup-content {
+    padding: 0 25px 0 25px;
+    text-align: justify;
+}
+
+@media (min-width:768px) {
+}
+/*** MEDIA QUERIES ***/
+/*@media(max-width:400px){
+	.flexslider .slides > li {height:120px;}
+	#homeFullScreen .flexslider .slides > li{height:60px;}
+	#flexHome h2 {font-size: 12px;}
+}*/
+
+@media(min-width:768px) {
+    .navbar-nav > li > a {
+        height: 95px;
+    }
+}
+/*@media(min-width:992px){
+	#flexHome h1 {font-size: 50px;}
+	#flexHome {
+	margin-top:66px;
+	}
+	.flexslider .slides > li {height:200px;}
+	#homeFullScreen .flexslider .slides > li{height:100px;}
+}*/
+
+@media(min-width:1200px) {
+    #bannerImageRotator.flexslider .flex-viewport {
+        width: 440px;
+        height: 440px;
+    }
+
+    #bannerImageRotator.flexslider {
+        margin: 0px;
+        background: none;
+    }
+
+        #bannerImageRotator.flexslider .slides > li {
+            height: 440px;
+            width: 440px;
+        }
+
+            #bannerImageRotator.flexslider .slides > li img {
+                height: 400px;
+                width: 400px;
+            }
+}
