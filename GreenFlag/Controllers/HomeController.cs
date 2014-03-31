@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GreenFlag.Services;
 
 namespace GreenFlag.Controllers
 {
@@ -18,7 +19,21 @@ namespace GreenFlag.Controllers
         public JsonResult Contact()
         {
             var frm = Request.Form;
-            return Json(new {success=true});
+            bool success = false;
+            try
+            {
+                var name = Request.Form["name"].Trim();
+                var email = Request.Form["email"].Trim();
+                var comments = Request.Form["comments"].Trim();
+                var phone = String.IsNullOrEmpty(Request.Form["phone"]) ? "" : Request.Form["phone"].Trim();
+                var service = new EmailService();
+                success = service.SendContactSubmission(email, name, comments, phone);
+            }
+            catch
+            {
+                //swallow
+            }
+            return Json(new {success=success});
         }
 	}
 }

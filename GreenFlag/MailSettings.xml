@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mailSettings>
+  <smtp from="greenflagsoftware@gmail.com">
+    <network enableSsl="true" host="smtp.gmail.com" port="587" userName="greenflagsoftware@gmail.com" password="foobar123" defaultCredentials="false" />
+  </smtp>
+</mailSettings>
