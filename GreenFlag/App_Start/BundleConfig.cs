@@ -27,7 +27,7 @@ namespace GreenFlag
            ,"~/Theme/OnePage/js-plugin/pageSlide/jquery.pageslide-custom.js"
            ,"~/Theme/OnePage/js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"
            ,"~/Theme/OnePage/js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"));
-           
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/custom.js", "~/Scripts/app/site.js"));
             bundles.Add(new StyleBundle("~/styles/bootstrap").Include(
                       "~/Content/bootstrap/css/bootstrap.css",
                       "~/Content/bootstrap/css/bootstrap-theme.css"
@@ -41,24 +41,9 @@ namespace GreenFlag
                 , "~/Theme/OnePage/js-plugin/owl.carousel/owl-carousel/owl.carousel.css"
                 , "~/Theme/OnePage/js-plugin/owl.carousel/owl-carousel/owl.theme.css"
                 , "~/Theme/OnePage/js-plugin/appear/nekoAnim.css"
-                , "~/Theme/OnePage/font-icons/custom-icons/css/custom-icons.css"
-                , "~/Theme/OnePage/font-icons/custom-icons/css/custom-icons-ie7.css"
-                ,"~/Theme/OnePage/css/layout.css"));
-            //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-            //            "~/Scripts/jquery-{version}.js"));
-
-            //// Use the development version of Modernizr to develop with and learn from. Then, when you're
-            //// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-            //            "~/Scripts/modernizr-*"));
-
-            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-            //          "~/Scripts/bootstrap.js",
-            //          "~/Scripts/respond.js"));
-
-            //bundles.Add(new StyleBundle("~/Content/css").Include(
-            //          "~/Content/bootstrap/bootstrap.css",
-            //          "~/Content/styles/site.css"));
+                , "~/Theme/OnePage/css/layout.css"
+        ));
+           
         }
     }
 }

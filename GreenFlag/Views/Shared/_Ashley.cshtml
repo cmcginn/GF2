@@ -7,13 +7,20 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>_Layout</title>
+    <title>Greenflag Software</title>
     @Styles.Render("~/styles/bootstrap")
     <script src="~/Scripts/Vendor/modernizr-2.6.1.min.js"></script>
-    @Styles.Render("~/styles/bootstrap")
-    @Styles.Render("~/styles/theme")
+
+    @Styles.Render("~/styles/Theme")
+    <link href="/Theme/OnePage/font-icons/custom-icons/css/custom-icons.css" rel="stylesheet" />
+    <link href="/Theme/OnePage/font-icons/custom-icons/css/custom-icons-ie7.css" rel="stylesheet" />
     <link href="~/Theme/OnePage/css/green.css" rel="stylesheet" />
     <link href="~/Theme/OnePage/css/site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/Theme/OnePage/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/Theme/OnePage/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Theme/OnePage/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Theme/OnePage/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Theme/OnePage/images/apple-touch-icon-144x144.png">
 </head>
 
 <body data-spy="scroll" data-target="#scrollTarget" data-offset="150" class="activateAppearAnimation">
@@ -97,8 +104,8 @@
     </div>
 
     @Scripts.Render("~/bundles/plugin")
-    <script src="~/Scripts/app/custom.js"></script>
-    <script src="~/Scripts/app/site.js"></script>
+    @Scripts.Render("~/bundles/app")
+
     @RenderSection("scripts", required: false)
 
 </body>

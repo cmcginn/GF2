@@ -113,7 +113,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppSettings.xml" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
@@ -125,6 +124,7 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="MailSettings.xml" />
     <Content Include="Scripts\app\._custom.js" />
     <Content Include="Scripts\app\custom.js" />
     <Content Include="Scripts\app\site.js" />
@@ -136,8 +136,11 @@
     <Content Include="Theme\OnePage\font-icons\custom-icons\font\custom-icons.woff" />
     <Content Include="Theme\OnePage\images\gf\GFLogoFlag.png" />
     <Content Include="Theme\OnePage\images\gf\thank-you-note.jpg" />
+    <Content Include="Theme\OnePage\images\gf\tree.jpg" />
+    <Content Include="Theme\OnePage\images\news\desktopApplications.jpg" />
     <Content Include="Theme\OnePage\images\news\desktopApplications.png" />
     <Content Include="Theme\OnePage\images\news\desktopApplications_small.png" />
+    <Content Include="Theme\OnePage\images\news\mobileApplications.jpg" />
     <Content Include="Theme\OnePage\images\news\mobileApplications.png" />
     <Content Include="Theme\OnePage\images\news\mobileApplications_small.png" />
     <Content Include="Theme\OnePage\images\news\webApplications.png" />
@@ -151,15 +154,18 @@
     <Content Include="Theme\OnePage\images\rotator\windows8.jpg" />
     <Content Include="Theme\OnePage\images\theme-pics\contact.jpg" />
     <Content Include="Theme\OnePage\images\theme-pics\raceCar.jpg" />
+    <Content Include="Theme\OnePage\images\works\amazonwebstore.jpg" />
     <Content Include="Theme\OnePage\images\works\android.jpg" />
     <Content Include="Theme\OnePage\images\works\aws.jpg" />
     <Content Include="Theme\OnePage\images\works\Azure.jpg" />
     <Content Include="Theme\OnePage\images\works\googletv.jpg" />
     <Content Include="Theme\OnePage\images\works\htmlcssjs.jpg" />
     <Content Include="Theme\OnePage\images\works\lightswitch.jpg" />
+    <Content Include="Theme\OnePage\images\works\magento.jpg" />
     <Content Include="Theme\OnePage\images\works\MicrosoftDotNet.jpg" />
     <Content Include="Theme\OnePage\images\works\mongodb.jpg" />
     <Content Include="Theme\OnePage\images\works\mysql.jpg" />
+    <Content Include="Theme\OnePage\images\works\nopcommerce.jpg" />
     <Content Include="Theme\OnePage\images\works\oracle.jpg" />
     <Content Include="Theme\OnePage\images\works\SharePoint.jpg" />
     <Content Include="Theme\OnePage\images\works\sqlite.jpg" />
