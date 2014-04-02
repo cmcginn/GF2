@@ -124,7 +124,6 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="MailSettings.xml" />
     <Content Include="Scripts\app\._custom.js" />
     <Content Include="Scripts\app\custom.js" />
     <Content Include="Scripts\app\site.js" />
@@ -203,6 +202,7 @@
     <Content Include="Views\Home\_Team.cshtml" />
     <Content Include="Views\Home\_Contact.cshtml" />
     <Content Include="Views\Home\_Banner.cshtml" />
+    <None Include="Properties\PublishProfiles\Folder.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -252,8 +252,6 @@
     <Content Include="Theme\OnePage\images\icon-map.png" />
     <Content Include="Theme\OnePage\images\loading.gif" />
     <Content Include="Theme\OnePage\images\main-logo-big.png" />
-    <Content Include="Theme\OnePage\images\main-logo.png" />
-    <Content Include="Theme\OnePage\images\neko-logo.png" />
     <Content Include="Theme\OnePage\images\news\news1.jpg" />
     <Content Include="Theme\OnePage\images\news\news2.jpg" />
     <Content Include="Theme\OnePage\images\news\news3.jpg" />
@@ -302,7 +300,6 @@
     <Content Include="Theme\OnePage\images\theme-pics\services.png" />
     <Content Include="Theme\OnePage\images\works\footer-work1.jpg" />
     <Content Include="Theme\OnePage\images\works\footer-work2.jpg" />
-    <Content Include="index.html" />
     <Content Include="Theme\OnePage\js-plugin\animation-framework\animate.css" />
     <Content Include="Theme\OnePage\js-plugin\animation-framework\animate.min.css" />
     <Content Include="Theme\OnePage\js-plugin\appear\jquery.appear.js" />

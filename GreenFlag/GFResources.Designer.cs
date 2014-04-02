@@ -70,7 +70,7 @@ namespace GreenFlag {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1-888-888-8888.
+        ///   Looks up a localized string similar to 1-800-869-4754.
         /// </summary>
         public static string PhoneNumber {
             get {

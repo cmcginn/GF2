@@ -1,4 +1,43 @@
-﻿#expertise .imgWrapper{background:#3c3b3b;}
+﻿body {
+    padding-top: 48px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+h2.subTitle {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 70px;
+}
+
+#bannerImageRotator.flexslider .flex-viewport {
+    width: 440px;
+    height: 440px;
+}
+
+#bannerImageRotator.flexslider {
+    margin: 0px;
+    background: none;
+}
+
+    #bannerImageRotator.flexslider .slides > li {
+        height: 340px;
+        width: 340px;
+    }
+
+        #bannerImageRotator.flexslider .slides > li img {
+            height: 300px;
+            width: 300px;
+        }
+
+#expertise .imgWrapper {
+    background: #3c3b3b;
+}
+
 #paralaxSlice1 {
     background-image: url('/Theme/OnePage/images/theme-pics/RaceCar.jpg');
 }
@@ -11,10 +50,33 @@
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
+.flexslider {
+    margin: 0px;
+}
+
+.navbar-nav > li > a {
+    font-size: 10px;
+    height: 65px;
+}
+
+    .navbar-nav > li > a i {
+        padding: 5px;
+    }
+
 .navbar-brand {
     padding: 10px 0 10px 0;
 }
-.newsText p{min-height:110px;}
+
+    .navbar-brand img {
+        width: 108px;
+        height: 45px;
+    }
+
+.paralaxText blockquote {
+    font-size: 34px;
+    line-height: 34px;
+}
+
 .info-popup {
     position: relative;
     background: #FFF;
@@ -39,33 +101,85 @@
     text-align: justify;
 }
 
+.slice {
+    padding: 33px 0;
+}
+
 @media (min-width:768px) {
 }
 /*** MEDIA QUERIES ***/
-/*@media(max-width:400px){
-	.flexslider .slides > li {height:120px;}
-	#homeFullScreen .flexslider .slides > li{height:60px;}
-	#flexHome h2 {font-size: 12px;}
-}*/
+
+
+
+
+@media(max-width:400px) {
+}
 
 @media(min-width:768px) {
-    .navbar-nav > li > a {
-        height: 95px;
+    .flexslider {
+        margin: 0 0 60px;
+    }
+
+
+
+    .newsText p {
+        min-height: 200px;
     }
 }
-/*@media(min-width:992px){
-	#flexHome h1 {font-size: 50px;}
-	#flexHome {
-	margin-top:66px;
-	}
-	.flexslider .slides > li {height:200px;}
-	#homeFullScreen .flexslider .slides > li{height:100px;}
-}*/
+
+@media(min-width:992px) {
+    body {
+        padding-top: 88px;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 44px;
+        margin-bottom: 17px;
+    }
+
+    h2.subTitle {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 90px;
+    }
+
+    .navbar-nav > li > a {
+        height: 95px;
+        font-size: 1em;
+    }
+
+    .paralaxText blockquote {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    .navbar-nav > li > a i {
+        padding: 20px 0 10px 0;
+    }
+
+    .navbar-brand img {
+        width: 180px;
+        height: 75px;
+    }
+
+    .slice {
+        padding: 66px 0;
+    }
+
+    .newsText p {
+        min-height: 130px;
+    }
+}
 
 @media(min-width:1200px) {
     #bannerImageRotator.flexslider .flex-viewport {
         width: 440px;
         height: 440px;
+    }
+
+    .newsText p {
+        min-height: 110px;
     }
 
     #bannerImageRotator.flexslider {
