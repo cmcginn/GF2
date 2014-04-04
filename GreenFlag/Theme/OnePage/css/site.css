@@ -53,7 +53,7 @@ h2.subTitle {
 .flexslider {
     margin: 0px;
 }
-
+.mask span.sectionTitle {color:#ffffff;padding-top:10px;font-weight:300}
 .navbar-nav > li > a {
     font-size: 10px;
     height: 65px;

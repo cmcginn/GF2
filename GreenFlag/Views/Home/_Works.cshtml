@@ -4,14 +4,14 @@
         height: 71px;
     }
 </style>
-@helper technology(string imageName, string sectionName, string url, string sectionTitle)
+@helper technology(string imageName, string sectionName, string sectionDesc, string url, string sectionTitle)
 {
     <article class="col-sm-4 isotopeItem @sectionName">
         <section class="imgWrapper">
             <img alt="" src="/Theme/OnePage/images/works/@imageName" class="img-responsive">
         </section>
         <div class="mediaHover">
-            <div class="mask"></div>
+            <div class="mask"><span class="sectionTitle">@sectionDesc</span></div>
             <div class="iconLinks">
                 <a href="@url" title="@sectionName" class="sizer" target="_blank">
                     <i class="icon-link-outline iconRounded iconBig"></i>
@@ -45,24 +45,24 @@
 
             <div class="portfolio-items  isotopeWrapper clearfix imgHover" id="3">
 
-                @technology("MicrosoftDotNet.jpg", "serverside", "http://www.microsoft.com/net", "Microsoft .NET Framework")
-                @technology("sharepoint.jpg", "serverside", "http://office.microsoft.com/en-us/sharepoint/", "Microsoft Sharepoint")
-                @technology("azure.jpg", "serverside", "https://www.windowsazure.com/en-us/", "Windows Azure")
-                @technology("windows8.jpg", "desktopweb", "http://windows.microsoft.com/en-us/windows-8/meet", "Windows 8")
-                @technology("lightswitch.jpg", "desktopweb", "http://msdn.microsoft.com/en-US/vstudio/htmlclient", "Visual Studio Lightswitch")
-                @technology("htmlcssjs.jpg", "desktopweb", "http://www.w3schools.com/html/html5_intro.asp", "Html Css JavaScript")
-                @technology("windowsphone.jpg", "devices", "http://www.windowsphone.com/en-us", "Windows Phone")
-                @technology("android.jpg", "devices", "http://www.android.com", "Android")
-                @technology("googletv.jpg", "devices", "http://www.google.com/tv/", "Google Tv")
-                @technology("sqlserver.jpg", "data", "http://www.microsoft.com/en-us/server-cloud/products/sql-server/", "Microsoft SQL Server")
-                @technology("oracle.jpg", "data", "http://www.oracle.com/us/products/database/overview/index.html", "Oracle")
-                @technology("mongodb.jpg", "data", "https://www.mongodb.org", "Mongodb")
-                @technology("mysql.jpg", "data", "http://www.mysql.com", "MySql")
-                @technology("sqlite.jpg", "data", "http://www.sqlite.com", "SQLite")
-                @technology("aws.jpg", "data", "http://aws.amazon.com", "Amazon Web Services")
-                @technology("nopcommerce.jpg", "ecom", "http://www.nopcommerce.com", "NOP Commerce")
-                @technology("magento.jpg", "ecom", "http://magento.com", "Magento")
-                @technology("amazonwebstore.jpg", "ecom", "http://webstore.amazon.com", "Amazon Webstore")
+                @technology("MicrosoftDotNet.jpg", "serverside", "Microsoft .NET", "http://www.microsoft.com/net", "Microsoft .NET Framework")
+                @technology("sharepoint.jpg", "serverside","Microsoft Sharepoint", "http://office.microsoft.com/en-us/sharepoint/", "Microsoft Sharepoint")
+                @technology("azure.jpg", "serverside","Windows Azure", "https://www.windowsazure.com/en-us/", "Windows Azure")
+                @technology("windows8.jpg", "desktopweb", "Windows 8 ", "http://windows.microsoft.com/en-us/windows-8/meet", "Windows 8")
+                @technology("lightswitch.jpg", "desktopweb","Visual Studio Lightswitch", "http://msdn.microsoft.com/en-US/vstudio/htmlclient", "Visual Studio Lightswitch")
+                @technology("htmlcssjs.jpg", "desktopweb","Html5, CSS, JavaScript", "http://www.w3schools.com/html/html5_intro.asp", "Html Css JavaScript")
+                @technology("windowsphone.jpg", "devices","Windows Phone", "http://www.windowsphone.com/en-us", "Windows Phone")
+                @technology("android.jpg", "devices", "Google Android","http://www.android.com", "Android")
+                @technology("googletv.jpg", "devices", "Google TV","http://www.google.com/tv/", "Google Tv")
+                @technology("sqlserver.jpg", "data", "Microsoft Sql Server","http://www.microsoft.com/en-us/server-cloud/products/sql-server/", "Microsoft SQL Server")
+                @technology("oracle.jpg", "data", "Oracle Database","http://www.oracle.com/us/products/database/overview/index.html", "Oracle")
+                @technology("mongodb.jpg", "data", "Mongo Document Database","https://www.mongodb.org", "Mongodb")
+                @technology("mysql.jpg", "data", "MySQL Database","http://www.mysql.com", "MySql")
+                @technology("sqlite.jpg", "data","SQLite Database", "http://www.sqlite.com", "SQLite")
+                @technology("aws.jpg", "data", "Amazon Web Services","http://aws.amazon.com", "Amazon Web Services")
+                @technology("nopcommerce.jpg","NOP Commerce", "ecom", "http://www.nopcommerce.com", "NOP Commerce")
+                @technology("magento.jpg", "ecom", "Magento Commerce","http://magento.com", "Magento")
+                @technology("amazonwebstore.jpg", "ecom","Amazon Web Store", "http://webstore.amazon.com", "Amazon Webstore")
             </div>
 
         </div>
